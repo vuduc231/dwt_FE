@@ -64,6 +64,32 @@
                                          <i class="bi bi-gear"></i>
                                          <span>Cấu hình</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link" data-name="hop-giao-ban">Cơ cấu tổ chức</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Hồ sơ nhân viên</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Mô tả công việc</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Danh mục nhiệm vụ</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Quy trình</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">KPI</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Phân quyền</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Chữ ký</a>
+                                        </li>
+                                     </ul>
                                  </li>
                                  <li class="header_menu-item">
                                      <a class="header_menu-link" href="quan-ly-nhan-su">
@@ -93,10 +119,18 @@
                                      </ul>
                                  </li>
                                  <li class="header_menu-item">
-                                     <a class="header_menu-link" href="ke-hoach-va-giao-viec">
+                                     <a class="header_menu-link" href="">
                                          <i class="bi bi-compass"></i>
                                          <span>Kế hoạch & Giao việc</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="ke-hoach" class="header_submenu-link" data-name="hop-giao-ban">Kế hoạch</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="giao-viec" class="header_submenu-link">Giao Việc</a>
+                                        </li>
+                                     </ul>
                                  </li>
                                  <li class="header_menu-item">
                                      <a class="header_menu-link" href="#">
@@ -109,18 +143,54 @@
                                          <i class="bi bi-shield-lock"></i>
                                          <span>Kiểm soát NV & CV</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link" data-name="hop-giao-ban">Sự cố phát sinh</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Phản ánh</a>
+                                        </li>
+                                     </ul>
                                  </li>
                                  <li class="header_menu-item">
                                      <a class="header_menu-link" href="#">
                                          <i class="bi bi-list-check"></i>
                                          <span>Xét duyệt</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link" data-name="hop-giao-ban">Sự việc và ý kiến</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Chi tiêu mua sắm</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Công tác</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Văn bản</a>
+                                        </li>
+                                     </ul>
                                  </li>
                                  <li class="header_menu-item">
                                      <a class="header_menu-link" href="#">
                                          <i class="bi bi-ui-checks-grid"></i>
                                          <span>Đề xuất</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link" data-name="hop-giao-ban">Sự việc và ý kiến</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Chi tiêu mua sắm</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Công tác</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="" class="header_submenu-link">Văn bản</a>
+                                        </li>
+                                     </ul>
                                  </li>
                                  <li class="header_menu-item">
                                      <a class="header_menu-link" href="#">

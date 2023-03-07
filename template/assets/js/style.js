@@ -86,25 +86,41 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCloseRight = document.getElementById('btn-right');
 
     btnCloseLeft.onclick = function () {
-        const isClosed = asideLeft.style.left === '-275px';
-        asideLeft.style.left = isClosed ? '0' : '-275px';
-        mainWrap.style.marginLeft = isClosed ? '275px' : '0';
+        const isClosed = asideLeft.style.left === '-250px';
+        asideLeft.style.left = isClosed ? '0' : '-250px';
+        mainWrap.style.marginLeft = isClosed ? '250px' : '0';
     };
 
     btnCloseRight.onclick = function () {
-        const isClosed = asideRight.style.right === '-275px';
-        asideRight.style.right = isClosed ? '0' : '-275px';
-        mainWrap.style.marginRight = isClosed ? '275px' : '0';
+        const isClosed = asideRight.style.right === '-250px';
+        asideRight.style.right = isClosed ? '0' : '-250px';
+        mainWrap.style.marginRight = isClosed ? '250px' : '0';
     };
 
     function handleChangeIconLeft(icon) {
-        icon.classList.toggle('bi-arrow-bar-left');
-        icon.classList.toggle('bi-arrow-bar-right');
+        if (icon.classList.contains('bi-arrow-bar-left')) {
+            icon.classList.remove('bi-arrow-bar-left');
+            icon.classList.add('bi-arrow-bar-right');
+        } else {
+            icon.classList.remove('bi-arrow-bar-right');
+            icon.classList.add('bi-arrow-bar-left');
+        }
     }
     function handleChangeIconRight(icon) {
-        icon.classList.toggle('bi-arrow-bar-right');
-        icon.classList.toggle('bi-arrow-bar-left');
+        if (icon.classList.contains('bi-arrow-bar-right')) {
+            icon.classList.remove('bi-arrow-bar-right');
+            icon.classList.add('bi-arrow-bar-left');
+        } else {
+            icon.classList.remove('bi-arrow-bar-left');
+            icon.classList.add('bi-arrow-bar-right');
+        }
     }
+    document.getElementById('btn-left').addEventListener('click', function () {
+        handleChangeIconLeft(document.querySelector('#btn-left i'));
+    });
+    document.getElementById('btn-right').addEventListener('click', function () {
+        handleChangeIconRight(document.querySelector('#btn-right i'));
+    });
 
     // THIS MONTH
     const today = new Date();

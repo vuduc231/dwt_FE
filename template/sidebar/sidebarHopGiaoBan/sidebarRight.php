@@ -434,7 +434,7 @@
             </div>
         </div>
         <span id="btn-right"
-            ><i class="bi bi-arrow-bar-right" onclick="handleChangeIconRight(this)"></i
+            ><i class="bi bi-arrow-bar-right"></i
         ></span>
     </div>
 </div>

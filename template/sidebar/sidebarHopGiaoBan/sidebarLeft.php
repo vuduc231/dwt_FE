@@ -136,7 +136,7 @@
             </div>
         </div>
         <span id="btn-left"
-            ><i class="bi bi-arrow-bar-left" onclick="handleChangeIconLeft(this)"></i
+            ><i class="bi bi-arrow-bar-left"></i
         ></span>
     </div>
 </div>
