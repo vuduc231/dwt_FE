@@ -873,6 +873,9 @@ th {
     padding: 16px 0;
     display: block;
     font-size: var(--fz-10);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #btn-left {
@@ -1092,10 +1095,21 @@ th {
     border-radius: var(--border-radius-main);
     box-shadow: rgb(0 0 0 / 16%) 0px 2px 4px;
     display: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.header_submenu-items:hover .header_submenu-link {
+.header_menu-list > li > #header_submenu::before {
+    content: '';
+    border-width: 9px 35px;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    position: absolute;
+}
+
+.header_submenu-items .header_submenu-link:hover {
     background-color: var(--white-color-blur);
     color: var(--primary-color);
 }

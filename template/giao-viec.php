@@ -9,7 +9,7 @@
             <div class="main">
                 <div class="container-fluid">
                     <div class="mainSection_heading">
-                        <h5 class="mainSection_heading-title">Kế Hoạch và Giao Việc</h5>
+                        <h5 class="mainSection_heading-title">Giao Việc</h5>
                         <div id="thismonth" class="mainSection_thismonth"></div>
                     </div>
                     <div class="row">

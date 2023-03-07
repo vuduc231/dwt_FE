@@ -4,8 +4,18 @@ $name = !empty($_REQUEST['name']) ? trim(strtolower($_REQUEST['name'])) : 'index
 
 $lists = [
 	'index' => 'index',
+
+	// Cấu hình danh mục và thuộc tính
+	'co-cau-to-chuc' => 'co-cau-to-chuc',
+	'ho-so-nhan-vien' => 'ho-so-nhan-vien',
+	'mo-ta-cong-viec' => 'mo-ta-cong-viec',
+	'danh-muc-nhiem-vu' => 'danh-muc-nhiem-vu',
+	'quy-trinh' => 'quy-trinh',
+	'kpi' => 'kpi',
+	'phan-quyen' => 'phan-quyen',
+	'chu-ky' => 'chu-ky',
+
 	'quan-ly-nhan-su' => 'quan-ly-nhan-su',
-	'thong-tin-ca-nhan' => 'thong-tin-ca-nhan',
 	'ke-toan' => 'ke-toan',
 	'dich-vu-ban-hang' => 'dich-vu-ban-hang',
 	'kinh-doanh' => 'kinh-doanh',
@@ -14,7 +24,29 @@ $lists = [
 	'hop-thang' => 'hop-thang',
 	'kho-luu-tru-bien-ban-hop' => 'kho-luu-tru-bien-ban-hop',
 	'bien-ban-hop' => 'bien-ban-hop',
-	'ke-hoach-va-giao-viec' => 'ke-hoach-va-giao-viec',
+
+	// Kế hoạch & Giao việc
+	'ke-hoach' => 'ke-hoach',
+	'giao-viec' => 'giao-viec',
+	
+	// Kiểm soát NV & CV
+	'su-co-phat-sinh' => 'su-co-phat-sinh',
+	'phan-anh' => 'phan-anh',
+
+	// Xét duyệt
+	'xet-duyet-su-viec-va-y-kien' => 'xet-duyet-su-viec-va-y-kien',
+	'xet-duyet-chi-tieu-mua-sam' => 'xet-duyet-chi-tieu-mua-sam',
+	'xet-duyet-cong-tac' => 'xet-duyet-cong-tac',
+	'xet-duyet-van-ban' => 'xet-duyet-van-ban',
+
+	// Trình/ Đề xuất
+	'de-xuat-su-viec-va-y-kien' => 'de-xuat-su-viec-va-y-kien',
+	'de-xuat-chi-tieu-mua-sam' => 'de-xuat-chi-tieu-mua-sam',
+	'de-xuat-cong-tac' => 'de-xuat-cong-tac',
+	'de-xuat-van-ban' => 'de-xuat-van-ban',
+
+	// Orthers
+	'thong-tin-ca-nhan' => 'thong-tin-ca-nhan',
 	'login' => 'login',
 ];
 
