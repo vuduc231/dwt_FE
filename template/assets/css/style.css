@@ -117,6 +117,19 @@
     width: 15%;
 }
 
+.style_table-5 tr th:first-child {
+    width: 5%;
+}
+.style_table-5 tr th:nth-child(2) {
+    width: 70%;
+}
+.style_table-5 tr th:nth-child(3) {
+    width: 20%;
+}
+.style_table-5 tr th:nth-child(4) {
+    width: 5%;
+}
+
 .add-row-btn {
     position: absolute;
     bottom: -30px;
@@ -134,6 +147,9 @@
     color: var(--primary-color);
     font-size: var(--fz-18);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .style_table-3 td:hover > .close-row-btn {

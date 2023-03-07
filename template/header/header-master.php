@@ -66,7 +66,7 @@
                                      </a>
                                  </li>
                                  <li class="header_menu-item">
-                                     <a class="header_menu-link" href="#">
+                                     <a class="header_menu-link" href="quan-ly-nhan-su">
                                          <i class="bi bi-person-add"></i>
                                          <span>Quản lý nhân sự</span>
                                      </a>

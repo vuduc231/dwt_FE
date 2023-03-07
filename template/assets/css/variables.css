@@ -8,6 +8,7 @@
     --pink-color-blur: #fef3f5;
 
     --border-radius-main: 8px;
+    --box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 11%);
 
     --width-sidebar: 275px;
 
@@ -51,6 +52,18 @@ a {
 button {
     outline: none;
     border: none;
+}
+
+input,
+textarea {
+    border: 1px solid var(--white-color-blur) !important;
+    background-color: #f8f9fa !important;
+}
+input:focus,
+textarea:focus {
+    border: 1px solid var(--primary-color) !important;
+    box-shadow: var(--box-shadow) !important;
+    outline: none;
 }
 
 .bs-searchbox .form-control:focus {

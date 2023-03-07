@@ -4,6 +4,7 @@ $name = !empty($_REQUEST['name']) ? trim(strtolower($_REQUEST['name'])) : 'index
 
 $lists = [
 	'index' => 'index',
+	'quan-ly-nhan-su' => 'quan-ly-nhan-su',
 	'thong-tin-ca-nhan' => 'thong-tin-ca-nhan',
 	'ke-toan' => 'ke-toan',
 	'dich-vu-ban-hang' => 'dich-vu-ban-hang',
