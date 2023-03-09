@@ -32,7 +32,7 @@ Author url    :  https://publicsite.pro
             dom: '<"dataTables_top"<"select_options">f>rt<"dataTables_bottom"ip>',
         });
         $('div.select_options').html(`
-        <select class="form-select" id="mySelect">
+        <select class="form-select">
             <option selected hidden>Chọn cuộc họp...</option>
             <optgroup label="Cuộc họp của tôi">
                 <option value="Giao ban">Giao ban</option>

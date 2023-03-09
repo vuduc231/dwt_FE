@@ -15,27 +15,30 @@ $lists = [
 	'phan-quyen' => 'phan-quyen',
 	'chu-ky' => 'chu-ky',
 
-	'quan-ly-nhan-su' => 'quan-ly-nhan-su',
-	'ke-toan' => 'ke-toan',
-	'dich-vu-ban-hang' => 'dich-vu-ban-hang',
-	'kinh-doanh' => 'kinh-doanh',
-	'hop-giao-ban' => 'hop-giao-ban',
-	'hop-tuan' => 'hop-tuan',
-	'hop-thang' => 'hop-thang',
-	'kho-luu-tru-bien-ban-hop' => 'kho-luu-tru-bien-ban-hop',
-	'bien-ban-hop' => 'bien-ban-hop',
+	// Quản lý nhân sự
+	'quan-ly-nhan-su' => 'quan-ly-nhan-su', // Done
+	'quan-ly-tuyen-dung' => 'quan-ly-tuyen-dung', // Done
+
+	'ke-toan' => 'ke-toan', // Done
+	'dich-vu-ban-hang' => 'dich-vu-ban-hang', // Done
+	'kinh-doanh' => 'kinh-doanh', // Done
+	'hop-giao-ban' => 'hop-giao-ban', // Done
+	'hop-tuan' => 'hop-tuan', // Done
+	'hop-thang' => 'hop-thang', // Done
+	'kho-luu-tru-bien-ban-hop' => 'kho-luu-tru-bien-ban-hop', // Done
+	'bien-ban-hop' => 'bien-ban-hop', // Done
 
 	// Kế hoạch & Giao việc
-	'ke-hoach' => 'ke-hoach',
-	'giao-viec' => 'giao-viec',
+	'ke-hoach' => 'ke-hoach', // Done
+	'giao-viec' => 'giao-viec', // Done
 	
 	// Kiểm soát NV & CV
-	'su-co-phat-sinh' => 'su-co-phat-sinh',
-	'phan-anh' => 'phan-anh',
+	'su-co-phat-sinh' => 'su-co-phat-sinh', // Done
+	'phan-anh' => 'phan-anh', // Done
 
 	// Xét duyệt
 	'xet-duyet-su-viec-va-y-kien' => 'xet-duyet-su-viec-va-y-kien',
-	'xet-duyet-chi-tieu-mua-sam' => 'xet-duyet-chi-tieu-mua-sam',
+	'xet-duyet-chi-tieu-mua-samư' => 'xet-duyet-chi-tieu-mua-sam',
 	'xet-duyet-cong-tac' => 'xet-duyet-cong-tac',
 	'xet-duyet-van-ban' => 'xet-duyet-van-ban',
 
@@ -46,8 +49,8 @@ $lists = [
 	'de-xuat-van-ban' => 'de-xuat-van-ban',
 
 	// Orthers
-	'thong-tin-ca-nhan' => 'thong-tin-ca-nhan',
-	'login' => 'login',
+	'thong-tin-ca-nhan' => 'thong-tin-ca-nhan', // Done
+	'login' => 'login', // Done
 ];
 
 

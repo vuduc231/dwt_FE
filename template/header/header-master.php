@@ -9,7 +9,7 @@
          <meta charset="UTF-8" />
          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         <title>Bảng điều khiển - THAI HUNG CORP</title>
+         <title><?php echo $pageTitle; ?> - THAI HUNG CORP</title>
 
          <!-- Favicon -->
         <link rel="shortcut icon" href="<?php echo $template_path?>/assets/img/favicon.jpg">   
@@ -29,21 +29,21 @@
              rel="stylesheet"
              href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
          />
-         <!-- <link
-             rel="stylesheet"
-             href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css"
-         /> -->
+         
+         <!-- Plugins -->
          <link rel="stylesheet" href="<?php echo $template_path?>assets/plugins/jquery-datetimepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
          <link rel="stylesheet" href="<?php echo $template_path?>assets/plugins/jquery-datetimepicker/jquery.timepicker.css" rel="stylesheet" />
 
-         <link rel="stylesheet" href="<?php echo $template_path?>/assets/css/variables.css" rel="stylesheet" />
+         <!-- Base -->
+         <link rel="stylesheet" href="<?php echo $template_path?>/assets/css/normalize.css" />
+         <link rel="stylesheet" href="<?php echo $template_path?>/assets/css/variables.css" />
          <link rel="stylesheet" href="<?php echo $template_path?>/assets/css/style.css" />
          <link rel="stylesheet" href="<?php echo $template_path?>/assets/css/responsive.css" />
      </head>
      <body>
          <div class="wrapper">
              <!-- Pre-Loader Page -->
-             <span id="loader" class="loader"> </span>
+             <span id="loader" class="loader"></span>
              <!-- End Pre-Loader Page -->
  
              <header id="header" class="header fixed-top" data-scrollto-offset="0">
@@ -96,6 +96,14 @@
                                          <i class="bi bi-person-add"></i>
                                          <span>Quản lý nhân sự</span>
                                      </a>
+                                     <ul id="header_submenu">
+                                        <li class="header_submenu-items">
+                                            <a href="quan-ly-tuyen-dung" class="header_submenu-link" data-name="hop-giao-ban">Tuyển dụng</a>
+                                        </li>
+                                        <li class="header_submenu-items">
+                                            <a href="#" class="header_submenu-link">Đánh giá nhân viên</a>
+                                        </li>
+                                     </ul>
                                  </li>
  
                                  <li class="header_menu-item">
@@ -145,10 +153,10 @@
                                      </a>
                                      <ul id="header_submenu">
                                         <li class="header_submenu-items">
-                                            <a href="" class="header_submenu-link" data-name="hop-giao-ban">Sự cố phát sinh</a>
+                                            <a href="su-co-phat-sinh" class="header_submenu-link" data-name="hop-giao-ban">Sự cố phát sinh</a>
                                         </li>
                                         <li class="header_submenu-items">
-                                            <a href="" class="header_submenu-link">Phản ánh</a>
+                                            <a href="phan-anh" class="header_submenu-link">Phản ánh</a>
                                         </li>
                                      </ul>
                                  </li>
@@ -162,7 +170,7 @@
                                             <a href="" class="header_submenu-link" data-name="hop-giao-ban">Sự việc và ý kiến</a>
                                         </li>
                                         <li class="header_submenu-items">
-                                            <a href="" class="header_submenu-link">Chi tiêu mua sắm</a>
+                                            <a href="xet-duyet-chi-tieu-mua-sam" class="header_submenu-link">Chi tiêu mua sắm</a>
                                         </li>
                                         <li class="header_submenu-items">
                                             <a href="" class="header_submenu-link">Công tác</a>

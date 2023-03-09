@@ -3,7 +3,7 @@ const doughnut = document.getElementById('doughnutChart');
 new Chart(doughnut, {
     type: 'doughnut',
     data: {
-        labels: ['Phòng nhân sự', 'Phòng Marketing', 'Phòng Tuyển Dụng', 'Phòng Kiếm Soát'],
+        labels: ['Nhân sự', 'Marketing', 'Tuyển Dụng', 'Kiếm Soát'],
         datasets: [
             {
                 label: '# of Votes',
@@ -14,8 +14,9 @@ new Chart(doughnut, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
-            yAxes: {
+            y: {
                 scaleLabel: {
                     display: true,
                     labelString: 'probability',
@@ -27,7 +28,7 @@ new Chart(doughnut, {
         },
         plugins: {
             legend: {
-                position: 'right',
+                position: 'top',
                 labels: {
                     usePointStyle: true,
                     pointStyle: 'rectRounded',

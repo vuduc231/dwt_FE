@@ -2,7 +2,7 @@ const pieChartTwo = document.getElementById('pieChartTwo');
 new Chart(pieChartTwo, {
     type: 'pie',
     data: {
-        labels: ['Phòng nhân sự', 'Phòng Marketing', 'Phòng Tuyển Dụng', 'Phòng Kiếm Soát'],
+        labels: ['Nhân sự', 'Marketing', 'Tuyển Dụng', 'Kiếm Soát'],
         datasets: [
             {
                 label: '# of Votes',
@@ -13,6 +13,7 @@ new Chart(pieChartTwo, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
             y: {
                 scaleLabel: {
@@ -26,7 +27,7 @@ new Chart(pieChartTwo, {
         },
         plugins: {
             legend: {
-                position: 'right',
+                position: 'top',
                 labels: {
                     usePointStyle: true,
                     pointStyle: 'rectRounded',

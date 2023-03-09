@@ -1,4 +1,5 @@
-<?php $pageTitle='Quản lý nhân sự'; ?>
+<?php $pageTitle='Tuyển dụng'; ?>
+
 <?php require_once($template_path.'header/header-master.php'); ?>
 
 <!--index page start-->
@@ -10,20 +11,8 @@
             <div class="main">
                 <div class="container-fluid">
                     <div class="mainSection_heading">
-                        <h5 class="mainSection_heading-title">Quản lý nhân sự</h5>
+                        <h5 class="mainSection_heading-title">Tuyển dụng</h5>
                         <div id="thismonth" class="mainSection_thismonth"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <div class='row'>
-                                        <!-- Content Here -->
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

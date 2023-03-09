@@ -28,19 +28,6 @@ new Chart(ctx, {
                 },
             ],
         },
-        scales: {
-            y: [
-                {
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'probability',
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                    },
-                },
-            ],
-        },
         plugins: {
             legend: {
                 position: 'top',

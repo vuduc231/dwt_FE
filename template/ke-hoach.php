@@ -1,4 +1,4 @@
-<?php $pageTitle='Quản lý nhân sự'; ?>
+<?php $pageTitle='Kế hoạch'; ?>
 <?php require_once($template_path.'header/header-master.php'); ?>
 
 <!--index page start-->
@@ -10,7 +10,7 @@
             <div class="main">
                 <div class="container-fluid">
                     <div class="mainSection_heading">
-                        <h5 class="mainSection_heading-title">Quản lý nhân sự</h5>
+                        <h5 class="mainSection_heading-title">Kế hoạch</h5>
                         <div id="thismonth" class="mainSection_thismonth"></div>
                     </div>
                     <div class="row">

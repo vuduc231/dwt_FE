@@ -61,6 +61,9 @@
                         </div>
                         <div class="login_acceptTerm">Nếu gặp vấn đề hãy liên hệ đến <a href="#">Admin</a></div>
                     </div>
+                    <div class="login_about">
+                        Copyright © 2023 - STEAM
+                    </div>
                 </div>
             </div>
         </div>

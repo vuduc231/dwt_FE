@@ -3,7 +3,7 @@ const ctx = document.getElementById('pieChart');
 new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Phòng nhân sự', 'Phòng Marketing', 'Phòng Tuyển Dụng', 'Phòng Kiếm Soát'],
+        labels: ['Nhân sự', 'Marketing', 'Tuyển Dụng', 'Kiếm Soát'],
         datasets: [
             {
                 label: '# of Votes',
@@ -14,6 +14,7 @@ new Chart(ctx, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
             y: {
                 scaleLabel: {
@@ -27,7 +28,7 @@ new Chart(ctx, {
         },
         plugins: {
             legend: {
-                position: 'right',
+                position: 'top',
                 labels: {
                     usePointStyle: true,
                     pointStyle: 'rectRounded',
