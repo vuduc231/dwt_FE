@@ -38,7 +38,7 @@ $lists = [
 
 	// Xét duyệt
 	'xet-duyet-su-viec-va-y-kien' => 'xet-duyet-su-viec-va-y-kien',
-	'xet-duyet-chi-tieu-mua-samư' => 'xet-duyet-chi-tieu-mua-sam',
+	'xet-duyet-chi-tieu-mua-sam' => 'xet-duyet-chi-tieu-mua-sam',
 	'xet-duyet-cong-tac' => 'xet-duyet-cong-tac',
 	'xet-duyet-van-ban' => 'xet-duyet-van-ban',
 
