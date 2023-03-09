@@ -1,3 +1,4 @@
+<?php $pageTitle='Họp giao ban'; ?>
 <?php require_once($template_path.'header/header-master.php'); ?>
 <!--index page start-->
 

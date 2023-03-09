@@ -7,7 +7,6 @@
                         <h6 class="sidebarBody_heading">KPI năm toàn công ty</h6>
                         <div class="sidebarBody_settings">
                             <div
-                                onclick="handleClickSettings()"
                                 id="sidebarBody_settings-body"
                                 class="sidebarBody_settings-body"
                             >

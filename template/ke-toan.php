@@ -1,3 +1,4 @@
+<?php $pageTitle='Kế toán'; ?>
 <?php require_once($template_path.'header/header-master.php'); ?>
 <!--index page start-->
 

@@ -85,17 +85,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCloseLeft = document.getElementById('btn-left');
     const btnCloseRight = document.getElementById('btn-right');
 
+    // btnCloseLeft.onclick = function () {
+    //     const isClosed = asideLeft.style.left === '-250px';
+    //     asideLeft.style.left = isClosed ? '0' : '-250px';
+    //     mainWrap.style.marginLeft = isClosed ? '250px' : '0';
+    // };
+
+    // btnCloseRight.onclick = function () {
+    //     const isClosed = asideRight.style.right === '-250px';
+    //     asideRight.style.right = isClosed ? '0' : '-250px';
+    //     mainWrap.style.marginRight = isClosed ? '250px' : '0';
+    // };
+
+    function updateVariables() {
+        const root = document.documentElement;
+        const width = getComputedStyle(root).getPropertyValue('--width-sidebar').trim();
+        asideLeft.style.width = width;
+        asideRight.style.width = width;
+        // asideRight.style.right = `${width}`;
+        // mainWrap.style.marginLeft = width;
+        // mainWrap.style.marginRight = '0';
+    }
+
+    updateVariables();
+
     btnCloseLeft.onclick = function () {
-        const isClosed = asideLeft.style.left === '-250px';
-        asideLeft.style.left = isClosed ? '0' : '-250px';
-        mainWrap.style.marginLeft = isClosed ? '250px' : '0';
+        const isClosed = asideLeft.style.left === `-${getComputedStyle(asideLeft).getPropertyValue('width').trim()}`;
+        asideLeft.style.left = isClosed ? '0' : `-${getComputedStyle(asideLeft).getPropertyValue('width').trim()}`;
+        mainWrap.style.marginLeft = isClosed ? getComputedStyle(asideLeft).getPropertyValue('width').trim() : '0';
     };
 
     btnCloseRight.onclick = function () {
-        const isClosed = asideRight.style.right === '-250px';
-        asideRight.style.right = isClosed ? '0' : '-250px';
-        mainWrap.style.marginRight = isClosed ? '250px' : '0';
+        const isClosed = asideRight.style.right === `-${getComputedStyle(asideRight).getPropertyValue('width').trim()}`;
+        asideRight.style.right = isClosed ? '0' : `-${getComputedStyle(asideRight).getPropertyValue('width').trim()}`;
+        mainWrap.style.marginRight = isClosed ? getComputedStyle(asideRight).getPropertyValue('width').trim() : '0';
     };
+
+    window.addEventListener('resize', function () {
+        updateVariables();
+    });
 
     function handleChangeIconLeft(icon) {
         if (icon.classList.contains('bi-arrow-bar-left')) {
@@ -122,6 +150,28 @@ document.addEventListener('DOMContentLoaded', () => {
         handleChangeIconRight(document.querySelector('#btn-right i'));
     });
 
+    // BTN SETTINGS
+    document.getElementById('sidebarBody_settings-body').addEventListener('click', handleClickSettings, false);
+    function handleClickSettings() {
+        const sidebarBodySelectWrapper = document.getElementById('sidebarBody_select-wrapper');
+        if (sidebarBodySelectWrapper.style.display === 'none') {
+            sidebarBodySelectWrapper.style.display = 'block';
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            sidebarBodySelectWrapper.style.display = 'none';
+            document.removeEventListener('click', handleClickOutside);
+        }
+    }
+
+    function handleClickOutside(event) {
+        const sidebarBodySettings = document.getElementsByClassName('sidebarBody_settings-body')[0];
+        const sidebarBodySelectWrapper = document.getElementById('sidebarBody_select-wrapper');
+        if (!sidebarBodySettings.contains(event.target) && !sidebarBodySelectWrapper.contains(event.target)) {
+            sidebarBodySelectWrapper.style.display = 'none';
+            document.removeEventListener('click', handleClickOutside);
+        }
+    }
+
     // THIS MONTH
     const today = new Date();
     const month = (today.getMonth() + 1).toString().padStart(2, '0');
@@ -129,24 +179,3 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDate = `${month}/${year}`;
     document.getElementById('thismonth').textContent = currentDate;
 });
-
-// BTN SETTINGS
-function handleClickSettings() {
-    const sidebarBodySelectWrapper = document.getElementById('sidebarBody_select-wrapper');
-    if (sidebarBodySelectWrapper.style.display === 'none') {
-        sidebarBodySelectWrapper.style.display = 'block';
-        document.addEventListener('click', handleClickOutside);
-    } else {
-        sidebarBodySelectWrapper.style.display = 'none';
-        document.removeEventListener('click', handleClickOutside);
-    }
-}
-
-function handleClickOutside(event) {
-    const sidebarBodySettings = document.getElementsByClassName('sidebarBody_settings-body')[0];
-    const sidebarBodySelectWrapper = document.getElementById('sidebarBody_select-wrapper');
-    if (!sidebarBodySettings.contains(event.target) && !sidebarBodySelectWrapper.contains(event.target)) {
-        sidebarBodySelectWrapper.style.display = 'none';
-        document.removeEventListener('click', handleClickOutside);
-    }
-}

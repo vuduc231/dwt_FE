@@ -10,7 +10,7 @@
     --border-radius-main: 8px;
     --box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 11%);
 
-    --width-sidebar: 250px;
+    --width-sidebar: 270px;
 
     /* FontSize */
     --fz-10: 1rem;
@@ -19,6 +19,10 @@
     --fz-16: 1.6rem;
     --fz-18: 1.8rem;
     --fz-20: 2rem;
+    --fz-22: 2.2rem;
+    --fz-24: 2.4rem;
+    --fz-26: 2.6rem;
+    --fz-28: 2.8rem;
 }
 
 /* GLOBAL */
@@ -47,6 +51,7 @@ ul {
 a {
     text-decoration: none;
     cursor: pointer;
+    box-shadow: none !important;
 }
 
 button {
@@ -64,6 +69,16 @@ textarea:focus {
     border: 1px solid var(--primary-color) !important;
     box-shadow: var(--box-shadow) !important;
     outline: none;
+}
+
+select optgroup {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+option:hover {
+    background-color: red !important;
 }
 
 .bs-searchbox .form-control:focus {

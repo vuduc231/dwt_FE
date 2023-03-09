@@ -1,3 +1,4 @@
+<?php $pageTitle='Kho lưu trữ biên bản họp'; ?>
 <?php require_once($template_path.'header/header-master.php'); ?>
 <!--index page start-->
 <div class="pageWithSidebar">
