@@ -347,8 +347,8 @@
                                                     <option>Marketting</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-4 d-flex align-items-center">
-                                                <label style="padding-right: 8px" for="staticEmail"
+                                            <div class="col-md-4 d-flex justify-content-between align-items-center">
+                                                <label style="padding-left: 10px" for="staticEmail"
                                                     class="col-form-label">Trưởng bộ phận</label>
                                                 <select data-width="55%" class="selectpicker" multiple>
                                                     <option>Nhân viên A</option>
@@ -397,33 +397,35 @@
                                                     <option>Marketting</option>
                                                 </select>
                                             </div>
-                                            <div class="col d-flex justify-content-between align-items-center">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <div class="col d-flex align-items-center">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input style="margin-right: 6px" class="form-check-input"
+                                                        type="checkbox" id="gridCheck">
                                                     <label class="form-check-label" for="gridCheck">
                                                         Bổ sung
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col d-flex justify-content-between align-items-center">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <div class="col d-flex align-items-center">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input style="margin-right: 6px" class="form-check-input"
+                                                        type="checkbox" id="gridCheck">
                                                     <label class="form-check-label" for="gridCheck">
                                                         Mở rộng
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col d-flex justify-content-between align-items-center">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <div class="col-md-3 d-flex align-items-center">
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <input style="margin-right: 6px" class="form-check-input"
+                                                        type="checkbox" id="gridCheck">
                                                     <label class="form-check-label" for="gridCheck">
                                                         Thay thế
                                                     </label>
+                                                    <input style="width: 60%" type="text" class="form-control"
+                                                        id="inputZip">
                                                 </div>
-                                            </div>
-                                            <div class="col d-flex">
-                                                <input type="text" class="form-control" id="inputZip">
-
                                             </div>
 
 
@@ -484,8 +486,9 @@
 
 
                                             <div class="col d-flex justify-content-between align-items-center">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input style="margin-right: 6px" class="form-check-input"
+                                                        type="checkbox" id="gridCheck">
                                                     <label class="form-check-label" for="gridCheck">
                                                         Lương thoả thuận
                                                     </label>
