@@ -62,7 +62,6 @@ button {
 input,
 textarea {
     border: 1px solid var(--white-color-blur) !important;
-    background-color: #f8f9fa !important;
 }
 input:focus,
 textarea:focus {
